@@ -36,7 +36,7 @@ export default class NewsPage extends React.Component<IProps> {
 
   public renderNewsCard(news: News) {
     return (
-      <a href={news.link} className="card">
+      <a href={news.link} className="card" target="_blank">
         <div className="card-image">
           <figure className="image is-4by3">
             <img
