@@ -28,7 +28,7 @@ RSS channels are defined inside constants.py file in rss django app
 
   1) Install:
   ```
-  # cs rss_server
+  # cd rss_server
   # pip install -r requirements.txt
   ```
   2) Run migrations
