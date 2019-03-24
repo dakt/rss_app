@@ -2,6 +2,9 @@
 
 ## Quick Start
 
+## RSS list configration
+RSS channels are defined inside constants.py file in rss django app
+
 ### Install and activate virtual environment
 ```
 # cd project_root
