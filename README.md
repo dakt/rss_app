@@ -32,7 +32,7 @@
   ```
   # python manage.py migrate
   ```
-  3) Run xss parser
+  3) Run RSS parser
   ```
   # python manage.py parserssfeeds
   ```
