@@ -4,14 +4,25 @@ import xml.etree.ElementTree as ET
 from datetime import datetime
 from django.core.management.base import BaseCommand
 from rss.models import Source, News
+from rss.constants import RSS_SOURCES
 
 
 class Command(BaseCommand):
 
     def handle(self, *args, **options):
+        print('Checking RSS sources list')
+        self._check_sources()
         print('Parsing XSS feeds...')
         total_news = self._parse()
         print('{0}Done. Total News: {1}'.format(os.linesep, total_news))
+
+    def _check_sources(self):
+        for rss_source in RSS_SOURCES:
+            rss_url = rss_source['link']
+            rss_title = rss_source['title']
+            if Source.objects.filter(url=rss_url).count() is 0:
+                source = Source(url=rss_url, title=rss_title)
+                source.save()
 
     def _parse(self):
         total_news = 0

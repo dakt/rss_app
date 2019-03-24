@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('rss', '0002_populate'),
+        ('rss', '0001_initial'),
     ]
 
     operations = [
