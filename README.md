@@ -1,6 +1,13 @@
 # RSS READER
 
-## Quickstart
+## Quick Start
+
+### Install and activate virtual environment
+```
+# cd project_root
+# python3 -m venv .venv
+# source .venv/bin/activate
+```
 
 ### Client
 
@@ -33,3 +40,9 @@
   ```
   # python manage.py runserver
   ```
+
+## Versions
+* python: 3.7.0
+* pip 10.0.1
+* npm: 6.4.1
+* node: v8.15.0
