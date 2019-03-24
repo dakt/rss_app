@@ -22,8 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "serve": "serve build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,7 +36,6 @@
   "devDependencies": {
     "@types/lodash-es": "^4.17.3",
     "@types/react-paginate": "^6.2.1",
-    "@types/react-router-dom": "^4.3.1",
-    "serve": "^10.1.2"
+    "@types/react-router-dom": "^4.3.1"
   }
 }
